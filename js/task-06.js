@@ -4,7 +4,8 @@ inputBox.addEventListener('blur', onBlur);
 
 function onBlur(event) {
 	const valueLength = event.currentTarget.value.length;
-	const dataLength = Number(event.currentTarget.dataset.length);
+	// const dataLength = Number(event.currentTarget.dataset.length);
+	const dataLength = Number(event.currentTarget.getAttribute('data-length'));
 
 	// console.log(valueLength, typeof valueLength);
 	// console.log(dataLength, typeof dataLength);
