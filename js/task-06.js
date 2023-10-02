@@ -12,7 +12,7 @@ function onBlur(event) {
 	// console.log(valueLength !== dataLength);
 
 	inputBox.classList.toggle('invalid', valueLength !== dataLength);
-	inputBox.classList.toggle('valid', valueLength == dataLength);
+	inputBox.classList.toggle('valid', valueLength === dataLength);
 }
 
 // Напиши скрипт, який під час втрати фокусу на інпуті(подія blur), перевіряє його вміст щодо правильної кількості введених символів.
